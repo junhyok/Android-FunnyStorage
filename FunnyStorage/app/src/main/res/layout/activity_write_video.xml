@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WriteVideo">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_write_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="@android:color/holo_orange_light"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        >
+
+        <ImageView
+            android:id="@+id/imageView_back_video"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="?attr/homeAsUpIndicator"
+            android:onClick="clickMethod_video_list"></ImageView>
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="게시글 작성"
+            android:textStyle="bold"
+            />
+    </androidx.appcompat.widget.Toolbar>
+    <RadioGroup
+        android:id="@+id/radioContentSelect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <RadioButton
+            android:id="@+id/radioButton_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="105dp"
+            android:text="동영상"
+            android:textStyle="bold"/>
+
+        <RadioButton
+            android:id="@+id/radioButton_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="이미지"
+            android:textStyle="bold"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView_write_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="60dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="제목"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editText_content_title"
+        android:layout_width="300dp"
+        android:layout_height="52dp"
+        android:layout_marginLeft="30dp"
+        android:hint="제목을 입력하세요"
+        android:imeOptions="actionDone"
+        android:overScrollMode="always"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="horizontal"
+        android:inputType="text"
+        ></EditText>
+
+    <!--<TextView
+        android:id="@+id/textView_video_thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="28dp"
+        android:text="동영상 섬네일"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        />
+
+    <EditText
+        android:id="@+id/editText_video_image_url"
+        android:layout_width="300dp"
+        android:layout_height="52dp"
+        android:layout_marginLeft="30dp"
+        android:hint="URL을 입력해주세요"
+        android:inputType="textUri"
+        android:minLines="15"
+        android:overScrollMode="always"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="horizontal"
+        android:visibility="invisible"
+        ></EditText>-->
+
+    <TextView
+        android:id="@+id/textView_content_url"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="28dp"
+        android:text="URL 주소"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        />
+
+    <EditText
+        android:id="@+id/editText_content_write_url"
+        android:layout_width="300dp"
+        android:layout_height="52dp"
+        android:layout_marginLeft="30dp"
+        android:hint="URL을 입력해주세요"
+        android:inputType="textUri"
+        android:minLines="15"
+        android:overScrollMode="always"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="horizontal"
+        android:visibility="invisible"></EditText>
+
+    <Button
+        android:id="@+id/button_write_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="확인"
+        android:textStyle="bold"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="70dp"
+        android:visibility="invisible"
+        ></Button>
+</LinearLayout>
+    <!-- <TextView
+         android:id="@+id/textView_image_url"
+         android:layout_width="wrap_content"
+         android:layout_height="35dp"
+         android:layout_marginLeft="30dp"
+         android:layout_marginTop="28dp"
+         android:text="이미지 경로"
+         android:textSize="20sp"
+         android:visibility="invisible"
+         />
+
+     <EditText
+         android:id="@+id/editText_image_url"
+         android:layout_width="300dp"
+         android:layout_height="52dp"
+         android:layout_marginLeft="30dp"
+         android:hint="URL 입력"
+         android:inputType="textUri"
+         android:minLines="15"
+         android:overScrollMode="always"
+         android:scrollbarStyle="insideInset"
+         android:scrollbars="horizontal"
+         android:visibility="invisible"
+         ></EditText>-->
+
+
+
+
+
