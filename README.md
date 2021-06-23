@@ -49,4 +49,3 @@
 
 <img width="30%" height="25%" src="https://user-images.githubusercontent.com/44920792/123039941-e37a6c00-d42d-11eb-8ce6-a252b8258685.png"></img>
 
-- 스플래시 화면
