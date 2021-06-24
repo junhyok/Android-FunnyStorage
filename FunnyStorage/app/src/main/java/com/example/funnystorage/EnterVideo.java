@@ -64,7 +64,7 @@ public class EnterVideo extends YouTubeBaseActivity {
         video_position = intent.getStringExtra("video_position");
         url_video = intent.getStringExtra("url_video");
 
-        youTubePlayerView.initialize("AIzaSyAtD8h2PT8AqDwz_R2H9sKFYzpXTPMqH2U", new YouTubePlayer.OnInitializedListener() {
+        youTubePlayerView.initialize("", new YouTubePlayer.OnInitializedListener() {
             @Override
             public void onInitializationSuccess(YouTubePlayer.Provider provider, final YouTubePlayer youTubePlayer, boolean b) {
 
